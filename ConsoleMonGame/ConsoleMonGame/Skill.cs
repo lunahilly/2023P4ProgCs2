@@ -14,9 +14,6 @@ namespace ConsoleMonGame
 
         internal void UseOn(ConsoleMon target, ConsoleMon caster)
         {
-            //haal je energycost van caster af door de deplete energy aan te roepen op caster
-            //geef je damage aan de target door door de takedamage funtie aan te roepen op target
-
             caster.DepleteEnergy(EnergyCost);
             target.TakeDamage(Damage);
         }
